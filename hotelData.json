@@ -1,0 +1,56 @@
+[
+    {
+        "id" : 1,
+        "name" : "The Prancing Pony",
+        "cost" : 850,
+        "facilities" : [
+            "Lounge and Bar",
+            "Swimming Pool",
+            "Live Entertainment",
+            "Free WiFi",
+            "Fitness Centre"
+        ],
+        "image" : "prancing-pony.jpg"
+    },
+
+    {
+        "id" : 2,
+        "name" : "The Leaky Cauldron",
+        "cost" : 920,
+        "facilities" : [
+            "Bar",
+            "Pet Friendly",
+            "Tennis Court",
+            "Free WiFi",
+            "Heated Swimming Pool"
+        ],
+        "image" : "leaky-cauldron.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "The Fiddler's Green",
+        "cost" : 999,
+        "facilities" : [
+            "Champagne Bar",
+            "Golf Course",
+            "Spa",
+            "Free WiFi",
+            "Yatch Rental"
+        ],
+        "image" : "fiddlers-green.jpg"
+    },
+    {
+        "id" : 4,
+        "name" : "The Broken Anvil",
+        "cost" : 895,
+        "facilities" : [
+            "Bar",
+            "Room Service",
+            "Private Garden",
+            "Free WiFi",
+            "Heated Swimming Pool"
+        ],
+        "image" : "broken-anvil.jpg"
+    }
+
+]
