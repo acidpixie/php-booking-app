@@ -1,8 +1,13 @@
-/* Login Page */
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Index Page */
 
 img {
     width: 1000px;
-    height: 820px;
+    height: 780px;
 }
 
 .pageContainer {
@@ -44,5 +49,60 @@ img {
     margin-top: 20px;
     margin-left: 340px;
     cursor: pointer;
+}
+
+/* Booking Page */
+
+.displayBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hotelImages {
+    width: 350px;
+    height: 250px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.bookingBox, h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.labelInfo {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+#button3 {
+    width: 80px;
+    margin-left: 15px;
+    background-color: #004ba1;
+    color: #ffffff;
+    border-radius: 5px;
+    border: #004ba1;
+    cursor: pointer;
+}
+
+.imageBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bookingInfo {
+    padding: 50px;
+    margin-left: 50px;
+
 }
 
