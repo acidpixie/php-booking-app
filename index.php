@@ -1,5 +1,16 @@
 <?php session_start();?>
 
+<?php 
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
+?>
+
+<?php
+include './classes/user.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,9 +34,11 @@
     <form action="" method="post">
         
         <label for 1>Name:</label>
-        <input type="text" name="name" class="userInput" id="1">
-        <label for 2>Email Address:</label>
-        <input type="email" name="email" class="userInput" id="2">
+        <input type="text" name="firstname" class="userInput" id="1">
+        <label for 2>Surname:</label>
+        <input type="text" name="surname" class="userInput" id="2">
+        <label for 3>Email Address:</label>
+        <input type="email" name="email" class="userInput" id="3">
 
         <button type="submit" name="loginBtn" id="button1">Login</button>
 
@@ -34,7 +47,21 @@
 
     <?php
 
-    if (isset($_POST["loginBtn"])) {
+    if (isset ($_POST['loginBtn'])) {
+        
+    // Create instance of new User in user
+    $_SESSION['client'] = new User(
+        rand(1000,9000),
+        $_POST['firstname'],
+        $_POST['surname'],
+        $_POST['email']
+    );
+    
+    header("location: ./pages/home.php");
+
+    }
+
+  /*  if (isset($_POST["loginBtn"])) {
 
         $name = $_POST["name"];
         $email = $_POST["email"];
@@ -43,7 +70,7 @@
     }
 
     //add in getters and setters
-    //call getter to display name on login page
+    //call getter to display name on login page */
 
     ?>
 

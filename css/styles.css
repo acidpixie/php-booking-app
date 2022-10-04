@@ -6,8 +6,8 @@ body {
 /* Index Page */
 
 img {
-    width: 1000px;
-    height: 780px;
+    max-width: 1000px;
+    height: auto;
 }
 
 .pageContainer {

@@ -3,13 +3,15 @@
 class User {
 
     private $id;
-    private $name;
+    private $firstname;
+    private $surname;
     private $email;
 
-    public function __construct($id, $name, $email) 
+    public function __construct($id, $firstname, $surname, $email) 
     {
         $this->id = $id;
-        $this->name = $name;
+        $this->firstname = $firstname;
+        $this->surname = $surname;
         $this->email = $email;
        
     }
@@ -28,15 +30,28 @@ class User {
 
     //Getter and Setter for name
 
-    public function getName() 
+    public function getFirstname() 
     {
-        return $this->name;
+        return $this->firstname;
     }
 
-    public function setName($name) 
+    public function setFirstname($firstname) 
     {
-        return $this->name;
+        return $this->firstname;
     }
+
+    //Getter and Setter for surname
+
+    public function getSurname() 
+    {
+        return $this->surname;
+    }
+
+    public function setSurname($surname) 
+    {
+        return $this->surname;
+    }
+
 
      //Getter and Setter for email
 
