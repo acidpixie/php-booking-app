@@ -1,14 +1,25 @@
 <?php 
 
-function calc($date1, $date2) {
+//calc duration of stay
 
-    //calculate duration checkout - checkin
-    $difference = strtotime($date2) - strtotime($date1);
+function calcDuration($startDate, $endDate) {
 
-    //round of figure and return number / 1 day 
+    $diff = strtotime($endDate) - strtotime($startDate);
 
-    return abs(round($difference / 86400));
+// 1 day = 24 hrs = 86400 secs
+    $duration = abs(round($diff / 86400));
+
+    return $duration;
+}
+
+//calc total cost
+
+function calcTotalCost($duration, $cost) {
+
+    $totalCost = $duration * $cost;
+
+    return $totalCost;
+
 }
 
 ?>
-

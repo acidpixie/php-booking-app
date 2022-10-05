@@ -1,9 +1,9 @@
 <?php
 
-require "../classes/booking";
-require "../classes/hotel";
-require "../classes/user";
-require "../includes/dataHotel.inc";
+require ("./classes/booking.php");
+require ("./classes/hotel");
+require ("./classes/user");
+require ("./includes/dataHotel.inc");
 
 $pageTitle = "Checkout";
 session_start();

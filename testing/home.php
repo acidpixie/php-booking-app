@@ -1,5 +1,6 @@
 
 <?php
+
 session_start();
 
 include './classes/user.php';
@@ -13,7 +14,7 @@ echo "Welcome we have successfully redirected the page from login to here....";
 if (isset($_POST['loginBtn'])) {
 
     //create user
-    $_SESSION['client'] = new User (
+    $_SESSION['user'] = new User (
         rand(1000,9000),
         $_POST['firstname'],
         $_POST['surname'],
@@ -23,6 +24,8 @@ if (isset($_POST['loginBtn'])) {
 }
 
 ?>
+
+<?php print_r($_POST); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +41,7 @@ if (isset($_POST['loginBtn'])) {
 </head>
 <body>
 
- <h4> Welcome <?php echo $_SESSION['client']->getFirstname() ?> ! </h4> 
+ <h4> Welcome <?php echo $_POST["firstname"]; ?> ! </h4> 
 
 </body>
 

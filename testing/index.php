@@ -31,7 +31,7 @@ include './classes/user.php';
 
 <div class="loginForm">
 
-    <form action="" method="post">
+    <form action="./pages/home.php" method="post">
         
         <label for 1>Name:</label>
         <input type="text" name="firstname" class="userInput" id="1">
@@ -50,7 +50,7 @@ include './classes/user.php';
     if (isset ($_POST['loginBtn'])) {
         
     // Create instance of new User in user
-    $_SESSION['client'] = new User(
+    $_SESSION['user'] = new User(
         rand(1000,9000),
         $_POST['firstname'],
         $_POST['surname'],
