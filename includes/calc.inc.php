@@ -12,7 +12,7 @@ function calcDuration($startDate, $endDate) {
     return $duration;
 }
 
-//calc total cost
+//calc total cost of stay
 
 function calcTotalCost($duration, $cost) {
 
