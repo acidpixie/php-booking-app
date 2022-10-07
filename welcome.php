@@ -8,7 +8,7 @@
 
 <?php
 
-require ("./classes/customer.php");
+include './includes/autoloader.inc.php';
 
 //create user object from input data
 $_SESSION['user'] = new Customer(
@@ -16,8 +16,23 @@ $_SESSION['user'] = new Customer(
     rand(100,999), //generate random number for customer id
     $_POST['firstname'],
     $_POST['surname'],
-    $_POST['email']
+    $_POST['email'],
+
+    $_SESSION['user'] = $user
 );
+
+var_dump($_SESSION['user']);
+
+
+
+?>
+
+<?php 
+
+//store date variables in session
+$_SESSION['duration'] = $duration; //variable undefinded
+$_SESSION['checkin'] = $_POST['checkin'];
+$_SESSION['checkout'] = $_POST['checkout'];
 
 ?>
 
@@ -38,8 +53,42 @@ $_SESSION['user'] = new Customer(
 
 <body>
 
-Welcome <?php echo $_SESSION['user']->getFirstname() ?> <br>
-Your email address is <?php echo $_POST['email']; ?>
+<h4>Welcome <?php echo $_SESSION['user']->getFirstname() ?></h4>
+
+<p>Find your perfect destination stay</p>
+
+<div class="dateForm">
+
+<form class="form2" action="#" method="post">
+    <label>Check-In Date:</label>
+    <input type="date" name="checkin" required>
+
+    <label>Check-Out Date:</label>
+    <input type="date" name="checkout" required>
+
+    <input type="submit" name="confirmDateBtn" value="confrim">
+</form>
+
+</div>
+
+<div>
 
 
-</body>
+<?php
+
+if ( isset($_POST['confirmDateBtn'])) {
+
+echo "Your checkin date is" . $_POST['checkin']; 
+
+echo "Your checkout date is" . $_POST['checkout'];
+
+}
+?>
+
+
+
+</div>
+
+
+
+</body> 
