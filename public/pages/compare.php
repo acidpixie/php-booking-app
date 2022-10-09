@@ -15,7 +15,6 @@ include "../includes/autoloader.inc.php";
 
 */
 
-
 include '../classes/Customer.class.php';
 include '../includes/hotel.inc.php';
 include '../classes/Hotel.class.php';
@@ -91,7 +90,7 @@ if (isset($_POST['confirmInfo'])) {
         <img src=".../public/resource/brokenAnvil.jpg" alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
         </div>
         <div class="HotelContainer">
-            <p>' . $hotel->getName() . '</p>
+            <p>' . $hotel->getHotel() . '</p>
         </div>
         <div class="dates">
             <p>Number of Days: ' . $duration . '</p>
@@ -108,7 +107,7 @@ if (isset($_POST['confirmInfo'])) {
             <form action="./pages/checkout.php" method="post" class="hotelBookingForm">
             <input type="hidden" name="cost" value= "' . $hotel->getCost() . '">
             <input type="hidden" name="TotalCost" value= "' . $hotel->getCost() * $duration . '">
-            <input type="hidden" name="hotelChoice" value= "' . $hotel->getName() . '">
+            <input type="hidden" name="hotelChoice" value= "' . $hotel->getHotel() . '">
             <input type="submit" name="book" value="Book" class="bookingBtn">
             </form >';
     } ?>

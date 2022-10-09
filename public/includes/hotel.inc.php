@@ -2,19 +2,25 @@
 // link to hotel class
 // create function to load hotel data from json file
 
-function createHotel($url) {
+function createHotel($hotelData) {
 
     $SESSION['hotels'] = [];
-    $hotelData = json_decode(file_get_contents($url));
 
-    foreach($hotelData as $info) {
+    $jsonData = file_get_contents('hotel.json');
+
+    $hotelData = json_decode($jsonData);
+
+    
+    ;
+
+    foreach($hotelData as $data) {
 
         $newHotel = new Hotel(
-            $info->id,
-            $info->name,
-            $info->cost,
-            $info->facilities,
-            $info->image,
+            $data->id,
+            $data->name,
+            $data->cost,
+            $data->facilities,
+            $data->image,
         );
 
         array_push($_SESSION['hotels'], $newHotel);
