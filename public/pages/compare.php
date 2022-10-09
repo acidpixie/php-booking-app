@@ -15,11 +15,13 @@ include "../includes/autoloader.inc.php";
 
 */
 
+
 include '../classes/Customer.class.php';
 include '../includes/hotel.inc.php';
 include '../classes/Hotel.class.php';
 include '../includes/calc.inc.php';
 include '../includes/autoloader.inc.php';
+
 
 //if submit button is clicked, create user object.
 

@@ -36,7 +36,7 @@ error_reporting(E_ALL);
        <h4>Quest Booking</h4>
        <p>Helping your plan your perfect Adventure</p>
 
-       <form class="form1" action="pages/compare.php" method="post">
+       <form class="form1" action="./pages/compare.php" method="post">
            <h4>Customer Info:</h4>
            <label>Firstname:</label>
            <input type="text" name="firstname">
