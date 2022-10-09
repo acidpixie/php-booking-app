@@ -1,14 +1,10 @@
-<?php session_start();?>
 
 <?php 
+//check errors
  ini_set('display_errors', 1);
  ini_set('display_startup_errors', 1);
  error_reporting(E_ALL);
 
-?>
-
-<?php 
-include './includes/autoloader.inc.php';
 ?>
 
 
@@ -32,23 +28,39 @@ include './includes/autoloader.inc.php';
 
 
  <div class="container">
-    <div class="loginForm">
 
-        <form class="form1" action="welcome.php" method="post">
-            <h4>Log In</h4>
+    <div class="imageBox">
+
+    </div>
+
+
+    <div class="infoBox">
+
+        <h4>Quest Booking</h4>
+        <p>Helping your plan your perfect Adventure</p>
+
+        <form class="form1" action="compare.php" method="post">
+            <h4>Customer Info:</h4>
             <label>Firstname:</label>
             <input type="text" name="firstname">
             <label>Surname:</label>
             <input type="text" name="surname">
             <label>Email Address:</label>
             <input type="email" name="email">
-
-            <input type="submit" name="loginBtn" value="login">
-        </form>
-
-
     </div>
 
+
+            <h4>Booking Info:</h4>
+    <div class="dateInfo">
+            <label>Check-In Date:</label>
+            <input type="date" name="checkin" required>
+
+            <label>Check-Out Date:</label>
+            <input type="date" name="checkout" required>
+    </div>
+
+            <input type="submit" name="confirmInfo" value="confrim">
+        </form>
 
  </div>
 
