@@ -7,19 +7,16 @@ function createHotel($url) {
     $SESSION['hotels'] = [];
     $hotelData = json_decode(file_get_contents($url));
 
-    foreach($hotelData as $hotelInfo) {
+    foreach($hotelData as $info) {
 
         $newHotel = new Hotel(
-            $hotelInfo->id,
-            $hotelInfo->name,
-            $hotelInfo->cost,
-            $hotelInfo->facilities,
-            $hotelInfo->image,
+            $info->id,
+            $info->name,
+            $info->cost,
+            $info->facilities,
+            $info->image,
         );
 
         array_push($_SESSION['hotels'], $newHotel);
     }  
 }
-
-
-?>

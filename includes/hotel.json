@@ -10,7 +10,7 @@
             "Free WiFi",
             "Fitness Centre"
         ],
-        "image" : "prancing-pony.jpg"
+        "image" : "prancingPony.jpg"
     },
 
     {
@@ -24,7 +24,7 @@
             "Free WiFi",
             "Heated Swimming Pool"
         ],
-        "image" : "leaky-cauldron.jpg"
+        "image" : "leakyCauldron.jpg"
     },
     {
         "id" : 3,
@@ -37,7 +37,7 @@
             "Free WiFi",
             "Yatch Rental"
         ],
-        "image" : "fiddlers-green.jpg"
+        "image" : "fiddlersGreen.jpg"
     },
     {
         "id" : 4,
@@ -50,7 +50,7 @@
             "Free WiFi",
             "Heated Swimming Pool"
         ],
-        "image" : "broken-anvil.jpg"
+        "image" : "brokenAnvil.jpg"
     }
 
 ]

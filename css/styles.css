@@ -5,104 +5,104 @@ body {
 
 /* Index Page */
 
-img {
-    max-width: 1000px;
-    height: 1200px;
-}
-
-.pageContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.loginForm {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 150px;
-    height: 350px;
-    margin: 150px;
-    padding-top: 150px;
-}
-
-.userInput {
-    margin-top: 5px;
-    width: 400px;
-    height: 20px;
-}
-
-#button1 {
-    background-color: #7399c5;
-    color: #ffffff;
-    border-radius: 4px;
-    border: #7399c5;
-    margin-left: 150px;
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-#button2 {
-    color: #004ba1;
-    background-color: #ffffff;
-    border: none;
-    margin-top: 20px;
-    margin-left: 340px;
-    cursor: pointer;
-}
-
-/* Booking Page */
-
-.displayBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.hotelImages {
-    width: 350px;
-    height: 250px;
-    padding-top: 20px;
-    padding-left: 15px;
-}
-
-.bookingBox, h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-.labelInfo {
-    padding-right: 8px;
-    padding-left: 8px;
-}
-
-#button3 {
-    width: 80px;
-    margin-left: 15px;
-    background-color: #004ba1;
-    color: #ffffff;
-    border-radius: 5px;
-    border: #004ba1;
-    cursor: pointer;
-}
-
-.imageBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 100px;
 }
 
-.bookingInfo {
-    padding: 50px;
-    margin-left: 50px;
+.infoContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 2px #5e5e5ec4;
+    border-radius: 0 15px 15px 0;
 
+}
+
+.buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.imgBox {
+    display: flex;
+    border-radius: 15px 0 0 15px;
+    border: solid 2px #5e5e5ec4;
+}
+
+.confirmBtn {
+    height: 30px;
+    background-color: #ff0000a4;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none
+}
+
+/* Compare Page */
+
+.welcomeMsg {
+    margin: 1em;
+}
+
+.hotelDiplayPic {
+    border-radius: 10px;
+    display: flex;
+}
+
+
+
+.hotelBox {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: solid 2px #00000087;
+    border-bottom: solid 2px #00000087;
+}
+
+.HotelContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bookingBtn {
+    background-color: #ff0000a4;
+    color: #ffffff;
+    height: 25px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Checkout Page */
+
+.checkoutContainer {
+    color: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #ff000080;
+    padding: 5px;
+    margin: 50px;
+    
+}
+
+.checkoutBtn {
+    height: 25px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+
+    
 }
 

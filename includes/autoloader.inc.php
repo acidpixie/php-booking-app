@@ -2,10 +2,12 @@
 spl_autoload_register('myAutoloader');
 
 function myAutoloader($className) {
-    $path = "classes/";
+    $path = "./classes/";
     $extention = ".class.php";
     $fullPath = $path . $className . $extention;
 
     include $fullPath;
 
 }
+
+//include "./classes/Booking.class.php"
