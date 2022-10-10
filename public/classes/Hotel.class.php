@@ -97,7 +97,7 @@ function createHotel() {
 
         $newHotel = new Hotel(
             $data->id,
-            $data->name,
+            $data->hotel,
             $data->cost,
             $data->facilities,
             $data->image,
@@ -107,6 +107,7 @@ function createHotel() {
     }  
 
     $newHotel = $hotelData;
-};
+
+}
 
 ?>

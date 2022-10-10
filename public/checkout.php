@@ -3,7 +3,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
+include("./classes/Customer.class.php");
+// include("./includes/hotel.inc.php");
+include("./classes/Hotel.class.php");
+include("./includes/calc.inc.php");
+include("./includes/autoloader.inc.php");
 
 session_start();
 $hotelChoice;

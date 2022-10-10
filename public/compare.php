@@ -3,8 +3,6 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-session_start();
-
 include("./classes/Customer.class.php");
 // include("./includes/hotel.inc.php");
 include("./classes/Hotel.class.php");
@@ -13,6 +11,8 @@ include("./includes/autoloader.inc.php");
 
 
 //if submit button is clicked, create user object.
+
+session_start();
 
 if (isset($_POST['confirmInfo'])) {
 
@@ -73,30 +73,30 @@ if (isset($_POST['confirmInfo'])) {
     </div>
 
     <div class="hotelBox">
-        <?php foreach ($_SESSION['hotels'] as $hotelData) {
+        <?php foreach ($_SESSION['hotels'] as $hotel) {
 
     echo ' -->
         <div class="card">
-        <img src=".../public/resource/brokenAnvil.jpg" alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
+        <img src="./resource/'.$hotel->getImage().' alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
         </div>
         <div class="HotelContainer">
-            <p> . $hotel->getHotel() . </p>
+            <img src="../public/resource/'. $hotel->getHotel() .'" >
         <div class="dates">
             <p>Number of Days: ' . $duration . '</p> 
             <p>Facilities:
                 <ul>
                 ';
-                 foreach ($hotelData->getFacilities() as $facilities) {
+                 foreach ($hotel->getFacilities() as $facilities) {
                 echo "<li>$facilities</li>";}
                 echo '
                 </ul>
             </p>
-            <p>Daily Rate: R ' . $hotelData->getCost() . ',00</p>
-            <p>Total Cost: R ' . $hotelData->getCost() * $duration . '</p>
-            <form action="/public/checkout.php" method="post" class="hotelBookingForm">
-            <input type="hidden" name="cost" value= "' . $hotelData->getCost() . '">
-            <input type="hidden" name="TotalCost" value= "' . $hotelData->getCost() * $duration . '">
-            <input type="hidden" name="hotelChoice" value= "' . $hotelData->getHotel() . '">
+            <p>Daily Rate: R ' . $hotel->getCost() . ',00</p>
+            <p>Total Cost: R ' . $hotel->getCost() * $duration . '</p>
+            <form action="./checkout.php" method="post" class="hotelBookingForm">
+            <input type="hidden" name="cost" value= "' . $hotel->getCost() . '">
+            <input type="hidden" name="TotalCost" value= "' . $hotel->getCost() * $duration . '">
+            <input type="hidden" name="hotelChoice" value= "' . $hotel->getHotel() . '">
             <input type="submit" name="book" value="Book" class="bookingBtn">
             </form >
             </div>';
