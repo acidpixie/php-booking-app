@@ -84,4 +84,29 @@ class Hotel {
     }
 }
 
+function createHotel() {
+
+    $SESSION['hotels'] = [];
+
+    $jsonData = file_get_contents('./includes/hotel.json');
+
+    $hotelData = json_decode($jsonData);
+
+
+    foreach($hotelData as $data) {
+
+        $newHotel = new Hotel(
+            $data->id,
+            $data->name,
+            $data->cost,
+            $data->facilities,
+            $data->image,
+        );
+
+        array_push($_SESSION['hotels'], $newHotel);
+    }  
+
+    $newHotel = $hotelData;
+};
+
 ?>

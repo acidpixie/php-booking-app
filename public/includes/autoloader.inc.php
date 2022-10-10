@@ -2,7 +2,7 @@
 spl_autoload_register('myAutoloader');
 
 function myAutoloader($className) {
-    $path = "./classes/";
+    $path = "./public/classes/";
     $extention = ".class.php";
     $fullPath = $path . $className . $extention;
 
@@ -11,3 +11,5 @@ function myAutoloader($className) {
 }
 
 //include "./classes/Booking.class.php"
+
+// ./public/includes/hotel.json

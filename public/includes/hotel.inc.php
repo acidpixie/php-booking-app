@@ -6,12 +6,10 @@ function createHotel($hotelData) {
 
     $SESSION['hotels'] = [];
 
-    $jsonData = file_get_contents('./public/includes/hotel.json');
+    $jsonData = file_get_contents('./includes/hotel.json');
 
     $hotelData = json_decode($jsonData);
 
-    
-    ;
 
     foreach($hotelData as $data) {
 
@@ -25,4 +23,4 @@ function createHotel($hotelData) {
 
         array_push($_SESSION['hotels'], $newHotel);
     }  
-}
+};
