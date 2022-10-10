@@ -6,7 +6,7 @@ function createHotel($hotelData) {
 
     $SESSION['hotels'] = [];
 
-    $jsonData = file_get_contents('hotel.json');
+    $jsonData = file_get_contents('./public/includes/hotel.json');
 
     $hotelData = json_decode($jsonData);
 

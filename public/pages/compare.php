@@ -21,6 +21,8 @@ include '../classes/Hotel.class.php';
 include '../includes/calc.inc.php';
 include '../includes/autoloader.inc.php';
 
+include '../includes/hotel.json';
+
 
 //if submit button is clicked, create user object.
 
@@ -37,7 +39,7 @@ if (isset($_POST['confirmInfo'])) {
     //create hotels
 
     try {
-        createHotel("./includes/hotel.json");
+        createHotel("../public/includes/hotel.json");
     } catch (Exception $err) {
         echo " Error loading hotels.. '+ $err ";
     }
