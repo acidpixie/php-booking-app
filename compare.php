@@ -97,22 +97,22 @@ if (isset($_POST['confirmInfo'])) {
 
     <div class="welcomeMsg">
         <h3> Welcome <?php echo $_SESSION['user']->getFirstName() ?> </h3>
-        <p>Please choose a Hotel that fits your Budget</p>
+        <p>Adventure at your fingertips</p>
+        <p>Choose the perfect destination that suits your pocket</p>
 
     </div>
 
-    <div class="hotelBox">
-     
-        <div class="card">
-    <?php foreach ($_SESSION['hotels'] as $hotel)
-    {
+     <?php foreach ($_SESSION['hotels'] as $hotel)
+        {
         echo '  
-        <img src="./images/'.$hotel->getImage() .'" alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
-        </div>
 
-        <div class="HotelContainer">
-            <p> '. $hotel->getName() .' </p>
+        <span class="contentContainer">
+
+        <img src="./images/'.$hotel->getImage() .'" alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
+        
+        <div class="detailsContainer>
         <div class="dates">
+            <p> '. $hotel->getName() .' </p>
             <p>Number of Days: '. $days . ' </p>
             <p>Facilities:
                 <ul>
@@ -124,17 +124,23 @@ if (isset($_POST['confirmInfo'])) {
             </p>
             <p>Daily Rate: R '. $hotel->getCost() .' </p>
             <p>Total Cost: R '. $hotel->getCost() * $days .' </p>
+
             <form action="./checkout.php" method="post" class="hotelBookingForm">
             <input type="hidden" name="cost" value= '.$hotel->getCost().' >
             <input type="hidden" name="totalCost" value='. $hotel->getCost() * $days .'>
             <input type="hidden" name="hotelChoice" value=' .$hotel->getName().'>
             <input type="submit" name="book" value="Book" class="bookingBtn">
-            </form >
+            </form>
         </div>
-    </div>
+        </div>
+
+        </span>
+    
     ';}?>
 
     </div>
+    </div>
+    
 
    
 

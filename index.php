@@ -15,7 +15,7 @@ error_reporting(E_ALL);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <script type="text/javascript" src="./js/script.js" defer> </script>  
+    <!-- <script type="text/javascript" src="./js/script.js" defer> </script> -->
 
     <title>Login Page</title>   
 </head>

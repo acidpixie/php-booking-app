@@ -49,6 +49,7 @@ body {
 
 .welcomeMsg {
     margin: 1em;
+    text-align: center;
 }
 
 .hotelDiplayPic {
@@ -56,8 +57,6 @@ body {
     display: flex;
     padding: 30px;
 }
-
-
 
 .hotelBox {
     display: flex;
@@ -68,18 +67,33 @@ body {
     padding-bottom: 15px;
     border-top: solid 2px #00000087; 
     border-bottom: solid 2px #00000087; 
-}
+} 
 
-.HotelContainer {
+.hotelContainer {
     width: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px #00000087;
+    border-radius: 30px;
+}
+
+
+
 .bookingBtn {
-    background-color: #ff0000a4;
     color: #ffffff;
+    background-color: #ff000080;
     height: 25px;
     width: 60px;
     border: none;
@@ -104,6 +118,5 @@ body {
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
-
     
 }
