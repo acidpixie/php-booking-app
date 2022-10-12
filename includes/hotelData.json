@@ -10,7 +10,7 @@
         "Fitness Center",
         "Live Entertainment"
     ],
-    "image": "./images/prancingPony.jpg"
+    "image": "prancingPony.jpg"
 },
 {
     "id": 2,
@@ -23,6 +23,33 @@
         "Free Wifi",
         "Heated Swimming Pool"
     ],
-    "image": "./images/leakyCauldron.jpg"
+    "image": "leakyCauldron.jpg"
+},
+{
+    "id": 3,
+    "name": "The Fiddler's Green",
+    "cost": 999,
+    "facilities": [
+        "Champagne Bar",
+        "Golf Course",
+        "Spa",
+        "Free Wifi",
+        "Yatch Rental"
+    ],
+    "image": "fiddlersGreen.jpg"
+},
+{
+    "id": 4,
+    "name": "The Broken Anvil",
+    "cost": 895,
+    "facilities": [
+        "Bar",
+        "Room Service",
+        "Private Garden",
+        "Free Wifi",
+        "Heated Swimming Pool"
+    ],
+    "image": "brokenAnvil.jpg"
 }
+
 ]

@@ -107,7 +107,7 @@ if (isset($_POST['confirmInfo'])) {
     <?php foreach ($_SESSION['hotels'] as $hotel)
     {
         echo '  
-        <img src="../images/'.$hotel->getImage() .'" alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
+        <img src="./images/'.$hotel->getImage() .'" alt="hotel" width="420px" height="280px" class="hotelDiplayPic">
         </div>
 
         <div class="HotelContainer">
