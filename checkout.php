@@ -37,8 +37,8 @@ if (isset ($_POST['book'])) {
             $_SESSION['checkin'],
             $_SESSION['checkout'],
             $_SESSION['days'],
-            $_SESSION['totalCost'],  //undefined array key
-            $hotelChoice['hotel'] //undefined variable
+            $_SESSION['totalCost'],  
+            $hotelChoice['hotel'] 
         );
 
         $_SESSION['newBooking'] = $newBooking;

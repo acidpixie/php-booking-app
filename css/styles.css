@@ -1,5 +1,6 @@
 body {
     box-sizing: border-box;
+    margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -47,10 +48,25 @@ body {
 
 /* Compare Page */
 
+.heroImage {
+    background-image: url("../images/backgroundImage.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 30px;
+    opacity: 70%;
+  }
+
 .welcomeMsg {
+    font-weight: 700;
+    color: #000000;
+    padding-top: 80px;
     margin: 1em;
     text-align: center;
 }
+
 
 .hotelDiplayPic {
     border-radius: 10px;
@@ -83,12 +99,17 @@ body {
 }
 
 .contentContainer {
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     border: solid 2px #00000087;
     border-radius: 30px;
 }
 
+li {
+    list-style-type: circle;
+    color: #96614a;
+}
 
 
 .bookingBtn {
@@ -119,4 +140,38 @@ body {
     border: none;
     border-radius: 5px;
     
+}
+
+
+@media (max-width: 600px) {
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px #00000087;
+        border-radius: 30px;
+    }
+
+    .hotelDiplayPic {
+        width: 300px;
+        height: 225px;
+
+    }
+
+    .detailsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+    }
+
+    .bookingBtn {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    p, ul {
+        margin-left: 30px;
+    }
+
 }

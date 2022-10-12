@@ -95,10 +95,12 @@ if (isset($_POST['confirmInfo'])) {
 
 <body>
 
+    <div class="heroImage">
     <div class="welcomeMsg">
         <h3> Welcome <?php echo $_SESSION['user']->getFirstName() ?> </h3>
-        <p>Adventure at your fingertips</p>
-        <p>Choose the perfect destination that suits your pocket</p>
+        <p class="slogan">Adventure at your fingertips</p>
+        <p class="slogan">Choose the perfect destination that suits your pocket.</p>
+    </div>
 
     </div>
 
