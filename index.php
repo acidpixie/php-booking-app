@@ -1,11 +1,11 @@
-<!-- <?php 
-//check errors
- ini_set('display_errors', 1);
- ini_set('display_startup_errors', 1);
- error_reporting(E_ALL);
+<?php
 
-?> -->
+//error checking code
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script type="text/javascript" src="./js/script.js" defer> </script>  
 
     <title>Login Page</title>   
@@ -26,7 +26,7 @@
 <div class="container">
 
     <div class="imageBox">
-        <img src="/public/resource/background.jpg" alt="Background" width="500" height="600" class="imgBox">
+        <img src="./images/background.jpg" alt="Background" width="500" height="600" class="imgBox">
     </div>
 
     
@@ -34,9 +34,9 @@
     <div class="infoBox">
 
         <h4>Quest Booking</h4>
-        <p>Helping your plan your perfect Adventure</p>
+        <p>Helping you plan your perfect Adventure</p>
 
-        <form class="form1" action="./pages/compare.php" method="post">
+        <form class="form1" action="./compare.php" method="post">
             <h4>Customer Info:</h4>
             <label>Firstname:</label>
             <input type="text" name="firstname">

@@ -54,6 +54,7 @@ body {
 .hotelDiplayPic {
     border-radius: 10px;
     display: flex;
+    padding: 30px;
 }
 
 
@@ -65,11 +66,12 @@ body {
     padding-right: 2em;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-top: solid 2px #00000087;
-    border-bottom: solid 2px #00000087;
+    border-top: solid 2px #00000087; 
+    border-bottom: solid 2px #00000087; 
 }
 
 .HotelContainer {
+    width: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -105,4 +107,3 @@ body {
 
     
 }
-

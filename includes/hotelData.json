@@ -1,0 +1,28 @@
+[
+{
+    "id": 1,
+    "name": "The Prancing Pony",
+    "cost": 850,
+    "facilities": [
+        "Lounge and Bar",
+        "Swimming Pool",
+        "Free Wifi",
+        "Fitness Center",
+        "Live Entertainment"
+    ],
+    "image": "./images/prancingPony.jpg"
+},
+{
+    "id": 2,
+    "name": "The Leaky Cauldron",
+    "cost": 920,
+    "facilities": [
+        "Bar",
+        "Pet Friendly",
+        "Tennis Court",
+        "Free Wifi",
+        "Heated Swimming Pool"
+    ],
+    "image": "./images/leakyCauldron.jpg"
+}
+]
