@@ -97,7 +97,7 @@ if (isset($_POST['confirmInfo'])) {
 
     <div class="heroImage">
     <div class="welcomeMsg">
-        <h3> Welcome <?php echo $_SESSION['user']->getFirstName() ?> </h3>
+        <h3> Welcome <?php echo ucwords($_SESSION['user']->getFirstName()) ?> </h3>
         <p class="slogan">Adventure at your fingertips</p>
         <p class="slogan">Choose the perfect destination that suits your pocket.</p>
     </div>

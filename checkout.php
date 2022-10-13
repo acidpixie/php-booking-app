@@ -64,6 +64,10 @@ if (isset ($_POST['book'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     
     <title>Checkout Page</title>
@@ -74,7 +78,7 @@ if (isset ($_POST['book'])) {
 <div class="checkoutContainer">
 
     <div>
-    <h4>Thank you for using Quest <?php echo $_SESSION['user']->getFirstName() ?>.</h4>
+    <h4>Thank you for using Quest <?php echo ucwords($_SESSION['user']->getFirstName()) ?>.</h4>
     <p>The following information about your booking will be sent through to the Hotel Manager</p>
     </div>
 
