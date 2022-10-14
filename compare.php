@@ -87,6 +87,10 @@ if (isset($_POST['confirmInfo'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
     <title>Compare Page</title>
@@ -97,9 +101,9 @@ if (isset($_POST['confirmInfo'])) {
 
     <div class="heroImage">
     <div class="welcomeMsg">
-        <h3> Welcome <?php echo ucwords($_SESSION['user']->getFirstName()) ?> </h3>
-        <p class="slogan">Adventure at your fingertips</p>
-        <p class="slogan">Choose the perfect destination that suits your pocket.</p>
+        <h2> Welcome <?php echo ucwords($_SESSION['user']->getFirstName()) ?> </h2>
+        <h3 class="slogan">Adventure at your fingertips</h3>
+        <h3 class="slogan">Choose the perfect destination that suits your pocket.</h3>
     </div>
 
     </div>

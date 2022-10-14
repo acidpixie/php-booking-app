@@ -56,14 +56,23 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     border-radius: 30px;
-    opacity: 70%;
   }
 
 .welcomeMsg {
-    color: #000000;
+    color: #ffffff;
     padding-top: 80px;
     margin: 1em;
     text-align: center;
+    text-shadow:
+            0.05em 0 black,
+            0 0.05em black,
+            -0.05em 0 black,
+            0 -0.05em black,
+            -0.05em -0.05em black,
+            -0.05em 0.05em black,
+            0.05em -0.05em black,
+            0.05em 0.05em black;
+
 }
 
 
@@ -126,7 +135,7 @@ li {
     color: #ffffff;
     border-radius: 30px;
     text-align: center;
-    background-color: #ff000080;
+    background-color: #ff00005b;
     padding: 5px;
     margin: 50px;
     

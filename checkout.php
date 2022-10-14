@@ -78,7 +78,7 @@ if (isset ($_POST['book'])) {
 <div class="checkoutContainer">
 
     <div>
-    <h4>Thank you for using Quest <?php echo ucwords($_SESSION['user']->getFirstName()) ?>.</h4>
+    <h4>Thank you for using Quest, <?php echo ucwords($_SESSION['user']->getFirstName()) ?>.</h4>
     <p>The following information about your booking will be sent through to the Hotel Manager</p>
     </div>
 
