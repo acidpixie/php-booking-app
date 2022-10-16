@@ -121,7 +121,9 @@ if (isset ($_POST['book'])) {
         </div>
 
         <div>
+            <a href="index.php">
             <button class="checkoutBtn">Confirm Booking</button>
+            </a>
         </div>
 
     </div>
